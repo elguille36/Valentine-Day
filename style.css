@@ -40,6 +40,11 @@
             align-items: flex-start;
         }
 
+        .remitente{
+
+            color:#fff;
+        }
+
         .clique{
 
             margin-top: 4%;
