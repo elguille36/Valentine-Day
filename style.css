@@ -1,0 +1,160 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+ }
+ 
+ 
+ body {
+            height: 100vh;
+            background: linear-gradient(135deg, #e0d7d8, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Georgia', serif;
+        }
+
+        .carta {
+            background: radial-gradient(circle,#c81d25,#ff9a9e);
+            /* width: 30%; */
+            width: 350px;
+            max-width: 90%;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .carta h1 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .box-Remitente{
+
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+        }
+
+        .clique{
+
+            margin-top: 4%;
+            color:#fff;
+            font-size: 1.2rem;
+            animation: aumentar 1.5s ease-in-out infinite;
+        }
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1); /* Tamaño original */
+    }
+    50% {
+        transform: scale(1.2); /* Aumentar al 120% */
+    }
+    100% {
+        transform: scale(1); /* Volver al tamaño original */
+    }
+}
+
+
+        .img{
+
+            width: 25%;
+            margin-bottom: 3%;
+            border-radius: 20px;
+            box-shadow: 0px 1px 1px 0px #c4a3a3;
+            animation: aumentar 1.5s ease-in-out infinite;
+        }
+
+        .mensagem {
+            display: none;
+            margin-top: 15px;
+            font-size: 16px;
+            color:#e6dad7;
+            animation: aparecer 1s ease-in-out;
+        }
+
+        #icon-coracao{
+
+            color:#cf0b5d;
+        }
+        
+         .conmemorar2,
+        .conmemorar {
+           display: none;
+           margin-top: 15px;
+        }
+        
+        #OPCAO1,
+        #OPCAO2{
+            accent-color: green;
+        }
+
+        .img-pizza{
+
+            width: 50%;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 18px;
+            background: #e63946;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #c81d25;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .coracoes-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .coracao {
+            position: absolute;
+            bottom: 0;
+            font-size: 20px;
+            animation: subir 3s linear forwards;
+        }
+
+        @keyframes subir {
+            0% {
+               transform: translateY(0) scale(1);
+               opacity: 1;
+            }
+            100% {
+               transform: translateY(-100vh) scale(1.9) rotate(360deg);
+               opacity: 0;
+            }
+        }
+
+
+
