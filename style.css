@@ -48,7 +48,7 @@
         .clique{
 
             margin-top: 4%;
-            color:#fff;
+            color:#ffdbed;
             font-size: 1.2rem;
             animation: aumentar 1.5s ease-in-out infinite;
         }
@@ -78,7 +78,7 @@
         .mensagem {
             display: none;
             margin-top: 15px;
-            font-size: 16px;
+            font-size: 15px;
             color:#e6dad7;
             animation: aparecer 1s ease-in-out;
         }
@@ -88,22 +88,18 @@
             color:#cf0b5d;
         }
         
-         .conmemorar2,
         .conmemorar {
            display: none;
            margin-top: 15px;
         }
         
-        #OPCAO1,
-        #OPCAO2{
-            accent-color: green;
-        }
 
         .img-pizza{
 
             width: 50%;
             border-radius: 20px;
             margin-top: 10px;
+            animation: aumentar 3s ease-in-out infinite;
         }
 
         button {
@@ -120,6 +116,20 @@
 
         button:hover {
             background: #c81d25;
+        }
+
+         #Conmemoracao{
+
+            /* margin-top: 20px; */
+            padding: 5px 8px;
+            background: #e63946;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s; 
+            animation: aumentar 1.8s ease-in-out infinite;
         }
 
         @keyframes aparecer {

@@ -2,10 +2,9 @@ const botao = document.getElementById("btnCarta");
 const mensagem = document.getElementById("mensagem");
 const container = document.querySelector(".coracoes-container");
 const clicar = document.querySelector(".clique");
-const sim = document.getElementById("OPCAO1");
-const nao = document.getElementById("OPCAO2");
+const conmemora = document.getElementById("Conmemoracao")
 const conmemoracao = document.getElementById('conmemorar');
-const conmemoracao2 = document.getElementById('conmemorar2');
+const foto = document.querySelector(".img");
 
 botao.addEventListener("click", () => {
 
@@ -20,6 +19,20 @@ botao.addEventListener("click", () => {
         soltarCoracoes();
     }
 });
+
+conmemora.addEventListener("click",() =>{
+
+    if(conmemoracao.style.display ==="block"){
+      conmemoracao.style.display = "none";
+      foto.style.animationPlayState = 'running'
+      conmemora.textContent = "💖";
+    }else{
+      conmemoracao.style.display ="block";
+      conmemora.textContent ="😍😍"
+      foto.style.animationPlayState = 'paused'
+    }
+
+})
 
 function soltarCoracoes() {
     for (let i = 0; i < 15; i++) {
@@ -38,24 +51,6 @@ function soltarCoracoes() {
     }
 }
 
-sim.addEventListener('click', () => {
-  if (sim.checked) {
-    nao.checked = false;
-    conmemoracao.style.display = 'block';
-    conmemoracao2.style.display = 'none';
-  }else{
-     conmemoracao.style.display = 'none'
-  }
-});
 
-nao.addEventListener('click', () => {
-  if (nao.checked) {
-    sim.checked = false;
-    conmemoracao2.style.display = 'block';
-     conmemoracao.style.display = 'none';
-  }else{
-    conmemoracao2.style.display = 'none';
-  }
-});
 
 
