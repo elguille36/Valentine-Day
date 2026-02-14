@@ -51,6 +51,12 @@ function soltarCoracoes() {
     }
 }
 
+function tocarMusica() {
+  const musica = document.getElementById("musica");
+  musica.play();
+}
+
+
 
 
 
